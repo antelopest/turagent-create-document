@@ -1,0 +1,25 @@
+{
+  "name": "app-gen-contract",
+  "version": "1.0.0",
+  "description": "Application generation contract for ta",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "nodemon server.js"
+  },
+  "author": "Belenko S. Y.",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^1.30.0",
+    "docxtemplater": "3.6.6",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "jszip": "2.6.1",
+    "mongoose": "^5.1.7",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}

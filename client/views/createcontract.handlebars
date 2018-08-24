@@ -1,0 +1,329 @@
+<div class="col-sm-12 col-md-12 col-lg-12">
+
+  <h1>Создание договора</h1>
+
+  <hr>
+
+  <form role="form" id="form_contract">
+    <h2>Договор</h2>
+    <div class="form-group row">
+      <div class="col-sm-4 col-md-3 col-lg-2">
+        <label>Номер договора</label>
+        <input type="text" class="form-control" id="contract_Number">
+      </div>
+
+      <div class="col-sm-4 col-md-3 col-lg-2">
+        <label>Дата договора</label>
+        <input type="text" class="form-control" id="contract_Date">
+      </div>
+    </div>
+  </form>
+
+  <hr>
+
+  <form role="form" id="form_client">
+    <h2>Заказчик</h2>
+
+    <h3>ФИО</h3>
+    <div class="form-group row">
+      <div class="col-sm-4 col-md-3 col-lg-3 no-padding">
+        <label>Фамилия</label>
+        <input type="text" class="form-control" id="client_Surname">
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-3 no-padding">
+        <label>Имя</label>
+        <input type="text" class="form-control" id="client_Name">
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-3 no-padding">
+        <label>Отчество</label>
+        <input type="text" class="form-control" id="client_Patronymic">
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-3 no-padding">
+        <label>Дата рождения</label>
+        <input type="text" class="form-control" id="client_DateOfBirth">
+      </div>
+    </div>
+
+    <h3>Паспорт РФ</h3>
+    <div class="form-group row">
+      <div class="col-sm-4 col-md-3 col-lg-2">
+        <label>Серия</label>
+        <input type="text" class="form-control" id="client_Serie">
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-2">
+        <label>Номер</label>
+        <input type="text" class="form-control" id="client_Number">
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-2 no-padding">
+        <label>Когда выдан</label>
+        <input type="text" class="form-control" id="client_Date">
+      </div>
+      <div class="col-sm-12 col-md-9 col-lg-6 no-padding">
+        <label>Кем выдан</label>
+        <input type="text" class="form-control" id="client_Who">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-4 col-md-3 col-lg-2">
+        <label>Код подразделения</label>
+        <input type="text" class="form-control" id="client_Code">
+      </div>
+      <div class="col-sm-8 col-md-6 col-lg-6 no-padding">
+        <label>Адрес регистрации</label>
+        <input type="text" class="form-control" id="client_Address">
+      </div>
+    </div>
+
+    <h3>Контактная информация</h3>
+    <div class="form-group row">
+      <div class="col-sm-4 col-md-3 col-lg-3 no-padding">
+        <label>Телефон</label>
+        <input type="text" class="form-control" id="client_Phone">
+      </div>
+    </div>
+    <div class="form-group form-check custom-check">
+      <input type="checkbox" class="form-check-input" id="client_Tourist">
+      <label class="form-check-label" for="exampleCheck1">Заказчик - турист</label>
+    </div>
+  </form>
+
+  <hr>
+
+
+  <h2>Туристы</h2>
+  <table class="table table-striped table-tourist" id="tableTourist">
+    <thead>
+      <tr class="tr-tourist">
+        <th scope="col">№</th>
+        <th scope="col">ФИО</th>
+        <th scope="col">Дата рождения</th>
+        <th scope="col">Загранпаспорт</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <form role="form" id="form_tourist">
+    <h3 class="h3-turist">Добавить туриста</h3>
+    <h3>ФИО</h3>
+    <div class="form-group row">
+      <div class="col-sm-4 col-md-3 col-lg-3 no-padding">
+        <label>Фамилия</label>
+        <input type="text" class="form-control" id="tourist_Surname">
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-3 no-padding">
+        <label>Имя</label>
+        <input type="text" class="form-control" id="tourist_Name">
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-3 no-padding">
+        <label>Отчество</label>
+        <input type="text" class="form-control" id="tourist_Patronymic">
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-3 no-padding">
+        <label>Дата рождения</label>
+        <input type="text" class="form-control" id="tourist_DateOfBirth">
+      </div>
+    </div>
+    <h3>Загранпаспорт</h3>
+    <div class="form-group row">
+      <div class="col-sm-4 col-md-3 col-lg-2 no-padding">
+        <label>Серия</label>
+        <input type="text" class="form-control" id="tourist_Serie">
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-2 no-padding">
+        <label>Номер</label>
+        <input type="text" class="form-control" id="tourist_Number">
+      </div>
+    </div>
+
+
+  </form>
+
+  <div class="button-tourist">
+    <button type="button" class="btn btn-primary" id="bAddTourist">Добавить</button>
+    <button type="button" class="btn btn-light" id="bRemoveTourist">Удалить</button>
+  </div>
+
+  <hr>
+
+  <h2>Тур</h2>
+  <form role="form" id="form_tour">
+    <div class="form-group row">
+      <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+        <label>Туроператор</label>
+        <select class="form-control" id="tour_TourOperator">
+          <option>Coral</option>
+          <option>Pegas</option>
+          <option>Anex</option>
+          <option>Sanmar</option>
+          <option>Alean</option>
+          <option>TEZ</option>
+          <option>TUI</option>
+          <option>ICS</option>
+          <option>БиблиоГлобус</option>
+          <option>Русский экспресс</option>
+          <option>Дельфин</option>
+        </select>
+      </div>
+    </div>
+
+    <h3 class="h3-tur">Маршрут</h3>
+
+    <div class="form-group row">
+      <div class="col-sm-4 col-md-4 col-lg-3 no-padding">
+        <label>Откуда</label>
+        <input type="text" class="form-control" id="tour_Departure">
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-3 no-padding">
+        <label>Куда</label>
+        <input type="text" class="form-control" id="tour_Arrival">
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-3 no-padding">
+        <label>Обратно</label>
+        <input type="text" class="form-control" id="tour_Return">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-sm-4 col-md-4 col-lg-3 no-padding">
+        <label>Начало тура</label>
+        <input type="text" class="form-control" id="tour_Start">
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-3 no-padding">
+        <label>Окончание тура</label>
+        <input type="text" class="form-control" id="tour_End">
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-3 no-padding">
+        <label>Продолжительность</label>
+        <input type="text" class="form-control" id="tour_Lasting">
+      </div>
+    </div>
+
+    <h3>Отель</h3>
+    <div class="form-group row">
+      <div class="col-sm-4 col-md-4 col-lg-4 no-padding">
+        <label>Название отеля</label>
+        <input type="text" class="form-control" id="tour_Hotel">
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 no-padding">
+        <label>Размещение</label>
+        <input type="text" class="form-control" id="tour_Placement">
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 no-padding">
+        <label>Питание</label>
+        <select class="form-control" id="tour_Food">
+          <option>RO - без питания</option>
+          <option>BB - завтраки</option>
+          <option>HB - полупансион</option>
+          <option>FB - полный пансион</option>
+          <option>AI - все включено</option>
+          <option>UAI - ультра все включено</option>
+          <option>HB+ - завтрак и ужин</option>
+          <option>FB+ - завтрак, обед и ужин</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-sm-8 col-md-8 col-lg-6 no-padding">
+        <label>Перевозка</label>
+        <select class="form-control" id="tour_Shipping">
+          <option>авиаперелет - чартерный / регулярный рейс - эконом класс</option>
+          <option>авиаперелет - чартерный / регулярный рейс - бизнес класс</option>
+          <option>нет</option>
+        </select>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 no-padding">
+        <label>Трансфер</label>
+        <select class="form-control" id="tour_Transfer">
+          <option>групповой с русскоговорящим гидом</option>
+          <option>нет</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+        <label>Экскурсионная программа</label>
+        <select class="form-control" id="tour_Excursion">
+          <option>Нет</option>
+          <option>Да</option>
+        </select>
+      </div>
+    </div>
+
+    <h3>Виза</h3>
+    <div class="form-group row">
+      <div class="col-sm-4 col-md-4 col-lg-3 no-padding">
+        <label>Виза</label>
+        <input type="text" class="form-control" id="tour_Visa" value="-">
+      </div>
+      <div class="col-sm-6 col-md-5 col-lg-3 no-padding">
+        <label>Срок сдачи документов на визу</label>
+        <input type="text" class="form-control" id="tour_DateVisa" value="-">
+      </div>
+    </div>
+
+    <h3>Страховка</h3>
+    <div class="form-group row">
+      <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+        <label >Медицинская страховка</label>
+        <select class="form-control" id="tour_MedicalInsurance">
+          <option>Да</option>
+          <option>Нет</option>
+        </select>
+      </div>
+      <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+        <label >Страховка от невыезда</label>
+        <select class="form-control" id="tour_TravelInsurance">
+          <option>Нет</option>
+          <option>Да</option>
+        </select>
+      </div>
+    </div>
+
+    <h3>Стоимость</h3>
+    <div class="form-group row">
+      <div class="col-sm-3 col-md-3 col-lg-3 no-padding">
+        <label for="text">Сумма</label>
+        <input type="text" class="form-control" id="tour_numberSum" placeholder="0">
+      </div>
+      <div class="col-sm-9 col-md-9 col-lg-6 no-padding">
+        <label for="text">Прописью</label>
+        <input type="text" class="form-control" id="tour_stringSum" readonly>
+      </div>
+    </div>
+  </form>
+
+  <hr>
+
+  <h2>Заполнить</h2>
+  <ul class="list-group" style="margin-bottom: 30px">
+
+    <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <div>Данные о договоре</div>
+      <span class="text-muted" id="status_Contract">Не выполнено</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <div>Данные о заказчике</div>
+      <span class="text-muted" id="status_Client">Не выполнено</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <div>Данные о туристах</div>
+      <span class="text-muted" id="status_Tourist">Не выполнено</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <div>Данные о туре</div>
+      <span class="text-muted" id="status_Tour">Не выполнено</span>
+    </li>
+  </ul>
+
+  <button type="button" class="btn btn-primary" id="b_Status">Проверка</button>
+  <button type="button" class="btn btn-success enable" id="b_CreateDocument" disabled>Скачать готовый договор</button>
+  <button type="button" class="btn" id="b_TestSend">Отправка данных на сервер</button>
+  
+  <hr>
+</div>

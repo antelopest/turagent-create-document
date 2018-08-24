@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: #F8F9FA;
+}
+header {
+  line-height: 70px;
+  background-color: #343A40;
+  height: 70px;
+}
+header nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+  text-align: center;
+  width: 145px;
+}
+header nav ul li a {
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+}
+
+header nav ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header nav ul li a.active {
+  font-weight: 700;
+}
+
+header button {
+  font-family: 'Roboto', sans-serif;
+  float: right;
+  height: 40px;
+  width: 185px;
+  line-height: 40px;
+  vertical-align: middle;
+  font-size: 13px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #28a745;
+  margin-top: 14px;
+  
+  color: #28a745;
+  background-color: #343A40;
+  outline: none;
+}
+header button:hover {
+  color: #fff;
+  background-color: #218838;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.form-control {
+  border-radius: 4px;
+  border-color: 1px solid #DFDFDF;
+}
+
+hr {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #212529;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+label {
+  font-size: 14px;
+}
+
+.form-control {
+  font-size: 14px;
+}
+
+.custom-check {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.table-tourist {
+  margin-bottom: 26px;
+}
+.h3-turist {
+  margin-bottom: 26px;
+}
+
+.tr-field:hover {
+  cursor: pointer;
+}
+
+.tr-tourist:hover {
+  cursor: default;
+}
+
+.button-tourist {
+  margin-top: 26px;
+}
+
+
+.h3-tur {
+  margin-top: 30px;
+}
+
+.btn {
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 8px 18px 8px 18px;
+}
+
+.form-check-input {
+ margin-top: 7px; 
+}
+
+.table {
+  font-size: 14px;
+}
+
+.btn:active, .btn:focus, .btn, .btn:hover {
+  outline: none;
+  outline-style: none;
+  border: none;
+}
+
+.list-status {
+  padding-bottom: 24px;
+}
+
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.list-group {
+  font-size: 14px;
+}
